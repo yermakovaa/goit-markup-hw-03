@@ -86,7 +86,7 @@ body {
 }
 /* Оформление героя */
 .hero-title {
-    margin-top: 0;
+    margin-top: 200px;
     margin-bottom: 30px;
     color: var(--primary-white-color);
     font-weight: 900;
@@ -116,18 +116,24 @@ body {
 
 /* Оформление секций */
 .section-title {
+    margin-top: 94px;
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
 }
 .feature-list-title {
+    margin-top: 55px;
+    margin-bottom: 0;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
 }
 .feature-list-item {
+    margin-top: 10px;
+    margin-bottom: 0;
     color: var(--secondary-text-color);
     font-weight: 400;
     font-size: 14px;
