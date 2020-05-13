@@ -28,6 +28,7 @@ body {
   background-color: aqua;
 }
 
+
 /* Оформление логотипа */
 .logo {
     color: var(--secondary-black-color);
