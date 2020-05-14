@@ -41,7 +41,7 @@ body {
 .logo {
     padding-top: 32px;
     padding-bottom: 32px;
-    
+
     color: var(--secondary-black-color);
     font-family: Raleway;
     font-weight: 700;
@@ -125,7 +125,7 @@ body {
 
 .hero-title {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 30px;
 
     color: var(--primary-white-color);
     font-weight: 900;
@@ -156,7 +156,7 @@ body {
 
 /* Оформление секций */
 .section-title {
-    margin-top: 0;
+    margin-top: 94px;
     margin-bottom: 0;
 
     font-weight: 700;
@@ -164,9 +164,21 @@ body {
     line-height: 1.17;
     text-align: center;
 }
+.hidden-title {
+    display: none;
+}
+
+.feature-list {
+    display: flex;
+    margin-top: 119px;
+}
+
+.feature-list .item:not(:first-child) {
+    margin-left: 29px;
+}
 
 .feature-list-title {
-    margin-top: 0;
+    margin-top: 55px;
     margin-bottom: 0;
 
     font-weight: 700;
@@ -175,7 +187,7 @@ body {
     text-transform: uppercase;
 }
 .feature-list-item {
-    margin-top: 0;
+    margin-top: 10px;
     margin-bottom: 0;
 
     color: var(--secondary-text-color);
@@ -183,14 +195,22 @@ body {
     font-size: 14px;
     line-height: 1.71;
 }
+.main-activity {
+    display: flex;
+    margin-top: 50px;
+}
+.main-activity .item:not(:first-child) {
+    margin-left: 30px;
+}
 .main-activity-item {
-    margin-top: 0;
+    margin-top: 27px;
     margin-bottom: 0;
 
     color: var(--primary-white-color);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
+    text-align: center;
     text-transform: uppercase;
 }
 .name {
