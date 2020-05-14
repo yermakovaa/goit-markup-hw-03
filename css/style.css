@@ -9,9 +9,8 @@
 
 /* Оформление фона и основного текста */
 body {
-    /* background-color: var(--primary-white-color); */
+    background-color: var(--primary-white-color);
     margin: 0;
-    background-color: thistle;
     color: var(--primary-text-color);
     font-family: Roboto;
     letter-spacing: 0.03em;
@@ -24,8 +23,8 @@ body {
   padding-left: 30px;
   padding-right: 30px;
   margin: 0 auto;
-  outline: 2px solid tomato;
-  background-color: aqua;
+  outline: 2px solid #000;
+  background-color: thistle;
 }
 
 
@@ -87,8 +86,8 @@ body {
 }
 /* Оформление героя */
 .hero-title {
-    margin-top: 200px;
-    margin-bottom: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
     color: var(--primary-white-color);
     font-weight: 900;
     font-size: 44px;
@@ -98,7 +97,6 @@ body {
     text-transform: uppercase;
 }
 .button {
-    margin-left: auto;
     padding: 10px 32px;
     display: inline-block;
     min-width: 200px;
@@ -117,15 +115,15 @@ body {
 
 /* Оформление секций */
 .section-title {
-    margin-top: 94px;
-    margin-bottom: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
 }
 .feature-list-title {
-    margin-top: 55px;
+    margin-top: 0;
     margin-bottom: 0;
     font-weight: 700;
     font-size: 14px;
@@ -133,7 +131,7 @@ body {
     text-transform: uppercase;
 }
 .feature-list-item {
-    margin-top: 10px;
+    margin-top: 0;
     margin-bottom: 0;
     color: var(--secondary-text-color);
     font-weight: 400;
@@ -141,6 +139,8 @@ body {
     line-height: 1.71;
 }
 .main-activity-item {
+    margin-top: 0;
+    margin-bottom: 0;
     color: var(--primary-white-color);
     font-weight: 700;
     font-size: 14px;
@@ -148,11 +148,15 @@ body {
     text-transform: uppercase;
 }
 .name {
+    margin-top: 0;
+    margin-bottom: 0;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
 }
 .specialty {
+    margin-top: 0;
+    margin-bottom: 0;
     color: var(--secondary-text-color);
     font-weight: 400;
     font-size: 16px;
@@ -186,6 +190,8 @@ body {
     text-transform: uppercase;
 }
 .copyright {
+    margin-top: 0;
+    margin-bottom: 0;
     color: rgba(255, 255, 255, 0.4);
     font-weight: 400;
     font-size: 12px;
@@ -194,6 +200,14 @@ body {
 }
 
 /* Оформление Портфолио */
+.section-projects-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
 .filter-item {
     color: var(--primary-text-color);
     background-color: #F5F4FA;
@@ -210,6 +224,8 @@ body {
     background-color: var(--accent-color);
 }
 .name-project {
+    margin-top: 0;
+    margin-bottom: 0;
     color: var(--primary-text-color);
     font-weight: 700;
     font-size: 18px;
@@ -220,12 +236,16 @@ body {
     text-decoration: none;
 }
 .project-item {
+    margin-top: 0;
+    margin-bottom: 0;
     color: var(--secondary-text-color);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
 }
 .project-text {
+    margin-top: 0;
+    margin-bottom: 0;
     color: var(--primary-white-color);
     font-weight: 400;
     font-size: 18px;
