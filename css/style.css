@@ -18,15 +18,16 @@ body {
     line-height: 1.14;
 }
 
+/* Контейнер для центрирования контента */
 .container {
-  width: 1260px;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin: 0 auto;
-  outline: 2px solid #000;
-  background-color: thistle;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1260px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: 2px solid #000;
+    background-color: thistle;
 }
-
 
 /* Оформление логотипа */
 .logo {
@@ -49,12 +50,14 @@ body {
     text-decoration: none;
 }
 
-/* Оформление навигации */
+/* Обнуление стилей для списков */
 .list {
     padding: 0;
     margin: 0;
     list-style: none;
 }
+
+/* Оформление навигации */
 .site-nav .link {
     color: var(--primary-text-color);
     font-weight: 500;
@@ -65,11 +68,12 @@ body {
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: var(--accent-color);
+    color: var(--accent-color);
 }
 .site-nav .link.current {
-  color: var(--accent-color);
+    color: var(--accent-color);
 }
+
 /* Оформление контактов в шапке */
 .contacts-link-item {
     color: var(--secondary-text-color);
@@ -84,6 +88,7 @@ body {
 .contacts-link-item:focus {
     color: var(--accent-color);
 }
+
 /* Оформление героя */
 .hero-title {
     margin-top: 0;
@@ -96,6 +101,8 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
+
+/* Оформление кнопки "Заказать услугу" */
 .button {
     padding: 10px 32px;
     display: inline-block;
@@ -170,6 +177,7 @@ body {
 .social-links:focus {
     color: var(--accent-color);
 }
+
 /* Оформление футера */
 .address-container {
     color: var(--primary-white-color);
@@ -209,6 +217,10 @@ body {
     text-align: center;
 }
 .filter-item {
+    display: inline-block;
+    height: 38px;
+    padding: 6px 22px;
+    border-radius: 4px;
     color: var(--primary-text-color);
     background-color: #F5F4FA;
     border-style: none;
@@ -220,6 +232,7 @@ body {
 }
 .filter-item:hover,
 .filter-item:focus {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 }
