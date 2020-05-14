@@ -9,45 +9,14 @@
 
 /* Оформление фона и основного текста */
 body {
-    background-color: var(--primary-white-color);
     margin: 0;
+
+    background-color: var(--primary-white-color);
     color: var(--primary-text-color);
     font-family: Roboto;
     letter-spacing: 0.03em;
     font-size: 14px;
     line-height: 1.14;
-}
-
-/* Контейнер для центрирования контента */
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1260px;
-    padding-left: 30px;
-    padding-right: 30px;
-    outline: 2px solid #000;
-    background-color: thistle;
-}
-
-/* Оформление логотипа */
-.logo {
-    color: var(--secondary-black-color);
-    font-family: Raleway;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    text-decoration: none;
-}
-.logo-web {
-    color: var(--accent-color)
-}
-.footer-logo {
-    color: var(--primary-white-color);
-    font-family: Raleway;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 1.18;
-    text-decoration: none;
 }
 
 /* Обнуление стилей для списков */
@@ -57,8 +26,49 @@ body {
     list-style: none;
 }
 
+/* Контейнер для центрирования контента */
+.container {
+    width: 1230px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid #000;
+    background-color: thistle;
+}
+
+/* Оформление логотипа */
+.logo {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
+    color: var(--secondary-black-color);
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+}
+
+.logo-web {
+    color: var(--accent-color)
+}
+
 /* Оформление навигации */
+.site-nav {
+    display: flex;
+    margin-left: 83px;
+}
+
+.site-nav .item + .item {
+    margin-left: 50px;
+}
+
 .site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -66,16 +76,30 @@ body {
     letter-spacing: 0.02em;
     text-decoration: none;
 }
+
 .site-nav .link:hover,
 .site-nav .link:focus {
     color: var(--accent-color);
 }
+
 .site-nav .link.current {
     color: var(--accent-color);
 }
 
 /* Оформление контактов в шапке */
+.contacts-link {
+    display: flex;
+    margin-left: 334px;
+}
+.contacts-link .item + .item {
+    margin-left: 30px;
+}
+
 .contacts-link-item {
+    margin-left: 10px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--secondary-text-color);
     font-style: normal;
     font-weight: 500;
@@ -84,20 +108,29 @@ body {
     letter-spacing: 0.02em;
     text-decoration: none;
 }
+
 .contacts-link-item:hover,
 .contacts-link-item:focus {
     color: var(--accent-color);
 }
 
+.main-nav {
+    display: flex;
+    align-items: center;
+}
 /* Оформление героя */
+.hero {
+    text-align: center;
+}
+
 .hero-title {
     margin-top: 0;
     margin-bottom: 0;
+
     color: var(--primary-white-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
@@ -109,6 +142,7 @@ body {
     min-width: 200px;
     height: 50px;
     border-radius: 4px;
+
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     font-weight: 700;
@@ -124,14 +158,17 @@ body {
 .section-title {
     margin-top: 0;
     margin-bottom: 0;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
 }
+
 .feature-list-title {
     margin-top: 0;
     margin-bottom: 0;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -140,6 +177,7 @@ body {
 .feature-list-item {
     margin-top: 0;
     margin-bottom: 0;
+
     color: var(--secondary-text-color);
     font-weight: 400;
     font-size: 14px;
@@ -148,6 +186,7 @@ body {
 .main-activity-item {
     margin-top: 0;
     margin-bottom: 0;
+
     color: var(--primary-white-color);
     font-weight: 700;
     font-size: 14px;
@@ -157,6 +196,7 @@ body {
 .name {
     margin-top: 0;
     margin-bottom: 0;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -164,6 +204,7 @@ body {
 .specialty {
     margin-top: 0;
     margin-bottom: 0;
+
     color: var(--secondary-text-color);
     font-weight: 400;
     font-size: 16px;
@@ -179,6 +220,14 @@ body {
 }
 
 /* Оформление футера */
+.footer-logo {
+    color: var(--primary-white-color);
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.18;
+    text-decoration: none;
+}
 .address-container {
     color: var(--primary-white-color);
     font-style: normal;
@@ -200,6 +249,7 @@ body {
 .copyright {
     margin-top: 0;
     margin-bottom: 0;
+
     color: rgba(255, 255, 255, 0.4);
     font-weight: 400;
     font-size: 12px;
@@ -211,6 +261,7 @@ body {
 .section-projects-title {
     margin-top: 0;
     margin-bottom: 0;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -221,6 +272,7 @@ body {
     height: 38px;
     padding: 6px 22px;
     border-radius: 4px;
+
     color: var(--primary-text-color);
     background-color: #F5F4FA;
     border-style: none;
@@ -239,6 +291,7 @@ body {
 .name-project {
     margin-top: 0;
     margin-bottom: 0;
+
     color: var(--primary-text-color);
     font-weight: 700;
     font-size: 18px;
@@ -251,6 +304,7 @@ body {
 .project-item {
     margin-top: 0;
     margin-bottom: 0;
+
     color: var(--secondary-text-color);
     font-weight: 400;
     font-size: 16px;
@@ -259,6 +313,7 @@ body {
 .project-text {
     margin-top: 0;
     margin-bottom: 0;
+
     color: var(--primary-white-color);
     font-weight: 400;
     font-size: 18px;
