@@ -245,6 +245,7 @@ body {
 }
 .workers .item {
     padding-bottom: 24px;
+
     background-color: var(--primary-white-color);
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
@@ -372,7 +373,13 @@ body {
 }
 
 /* Оформление Портфолио */
+.section-projects {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .section-projects-title {
+    display: none;
     margin-top: 0;
     margin-bottom: 0;
 
@@ -381,6 +388,16 @@ body {
     line-height: 1.17;
     text-align: center;
 }
+.filter {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.filter .item + .item {
+    margin-left: 8px;
+}
+
 .filter-item {
     display: inline-block;
     height: 38px;
@@ -402,9 +419,25 @@ body {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 }
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+
+}
+.projects .item {
+    margin: 15px;
+    width: 380px;
+
+    background-color: var(--primary-white-color);
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+}
 .name-project {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 20px;
+    margin-bottom: 4px;
+    margin-left: 24px;
+    margin-right: 24px;
 
     color: var(--primary-text-color);
     font-weight: 700;
@@ -417,7 +450,9 @@ body {
 }
 .project-item {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 20px;
+    margin-left: 24px;
+    margin-right: 24px;
 
     color: var(--secondary-text-color);
     font-weight: 400;
@@ -425,6 +460,7 @@ body {
     line-height: 1.87;
 }
 .project-text {
+    display: none;
     margin-top: 0;
     margin-bottom: 0;
 
