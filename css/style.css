@@ -125,6 +125,9 @@ body {
 
 /* Оформление героя */
 .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
     text-align: center;
     background-color: rgba(47, 48, 58, 0.8);
 }
@@ -311,9 +314,6 @@ body {
 }
 
 .footer-logo {
-    display: block;
-    margin-bottom: 10px;
-
     color: var(--primary-white-color);
     font-family: Raleway;
     font-weight: 700;
@@ -323,15 +323,25 @@ body {
 }
 
 .address-container {
+    margin-top: 10px;
+
     color: var(--primary-white-color);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
 }
+
 .address-container-link {
+    display: block;
+    margin-top: 9px;
+
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
+}
+
+.join {
+    margin-right: 102px;
 }
 .call {
     color: var(--primary-white-color);
@@ -340,8 +350,18 @@ body {
     line-height: 1.14;
     text-transform: uppercase;
 }
+
+.socials {
+    display: flex;
+    margin-top: 21px;
+}
+
+.socials .item-link:not(:first-child) {
+    margin-left: 10px;
+}
+
 .copyright {
-    margin-top: 0;
+    margin-top: 18px;
     margin-bottom: 0;
 
     color: rgba(255, 255, 255, 0.4);
