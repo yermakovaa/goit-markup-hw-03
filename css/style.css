@@ -54,6 +54,7 @@ body {
     color: var(--accent-color)
 }
 
+
 /* Оформление навигации */
 .page-header {
     display: flex;
