@@ -26,7 +26,10 @@ body {
 
     list-style: none;
 }
-
+/* block для картинок */
+img {
+    display: block;
+}
 /* Контейнер для центрирования контента */
 .container {
     width: 1200px;
@@ -56,6 +59,9 @@ body {
 }
 
 /* Оформление навигации */
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
 .page-header {
     display: flex;
     align-items: center;
@@ -255,6 +261,7 @@ body {
     background-color: var(--primary-white-color);
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    overflow: hidden;
 }
 .name {
     margin-top: 30px;
@@ -433,17 +440,23 @@ body {
 }
 .projects .item {
     margin: 15px;
-    width: 380px;
+    width: 370px;
 
     background-color: var(--primary-white-color);
-    border: 1px solid #EEEEEE;
+    
     border-radius: 5px;
 }
+.card-content {
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 20px 20px;
+}
 .name-project {
-    margin-top: 20px;
+    margin-top: 0;
     margin-bottom: 4px;
-    margin-left: 24px;
-    margin-right: 24px;
 
     color: var(--primary-text-color);
     font-weight: 700;
@@ -456,9 +469,7 @@ body {
 }
 .project-item {
     margin-top: 0;
-    margin-bottom: 20px;
-    margin-left: 24px;
-    margin-right: 24px;
+    margin-bottom: 0;
 
     color: var(--secondary-text-color);
     font-weight: 400;
