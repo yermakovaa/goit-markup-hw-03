@@ -13,7 +13,7 @@ body {
     background-color: var(--primary-white-color);
     color: var(--primary-text-color);
 
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
     font-size: 14px;
     line-height: 1.14;
@@ -26,10 +26,12 @@ body {
 
     list-style: none;
 }
+
 /* block для картинок */
 img {
     display: block;
 }
+
 /* Контейнер для центрирования контента */
 .container {
     width: 1200px;
@@ -41,13 +43,13 @@ img {
     background-color: thistle; */
 }
 
-/* Оформление логотипа */
+/* Оформление логотипа в шапке */
 .logo {
     padding-top: 25px;
     padding-bottom: 25px;
 
     color: var(--secondary-black-color);
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -59,9 +61,6 @@ img {
 }
 
 /* Оформление навигации */
-.header {
-    border-bottom: 1px solid #ECECEC;
-}
 .page-header {
     display: flex;
     align-items: center;
@@ -100,6 +99,10 @@ img {
 
 .site-nav .link.current {
     color: var(--accent-color);
+}
+
+.header.line {
+    border-bottom: 1px solid #ECECEC;
 }
 
 /* Оформление контактов в шапке */
@@ -178,6 +181,7 @@ img {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
 .section-title {
     margin-top: 0;
     margin-bottom: 0;
@@ -188,6 +192,7 @@ img {
     text-align: center;
 }
 
+/* Преимущества */
 .hidden-title {
     display: none;
 }
@@ -195,11 +200,13 @@ img {
 .feature-list {
     display: flex;
 }
+
 .image {
     padding: 25px 100px;
     background: var(--bg-color);
     border-radius: 4px;
 }
+
 .feature-list .item:not(:first-child) {
     margin-left: 30px;
 }
@@ -213,6 +220,7 @@ img {
     line-height: 1.14;
     text-transform: uppercase;
 }
+
 .feature-list-item {
     margin-top: 10px;
     margin-bottom: 0;
@@ -222,10 +230,17 @@ img {
     font-size: 14px;
     line-height: 1.71;
 }
+
+/* Чем мы занимаемся */
+.service {
+    border-top: 1px solid #ECECEC;
+}
+
 .main-activity {
     display: flex;
     margin-top: 50px;
 }
+
 .main-activity .item:not(:first-child) {
     margin-left: 30px;
 }
@@ -242,8 +257,10 @@ img {
     text-align: center;
     text-transform: uppercase;
 }
-.service .container {
-    border-top: 1px solid #ECECEC;
+
+/* Наша команда */
+.team {
+    background-color: var(--bg-color);
 }
 
 .workers {
@@ -252,9 +269,11 @@ img {
 
     text-align: center;
 }
+
 .workers .item:not(:first-child) {
     margin-left: 30px;
 }
+
 .workers .item {
     padding-bottom: 24px;
 
@@ -263,6 +282,7 @@ img {
     border-radius: 4px;
     overflow: hidden;
 }
+
 .name {
     margin-top: 30px;
     margin-bottom: 0;
@@ -271,6 +291,7 @@ img {
     font-size: 16px;
     line-height: 1.19;
 }
+
 .specialty {
     margin-top: 10px;
     margin-bottom: 0;
@@ -280,11 +301,13 @@ img {
     font-size: 16px;
     line-height: 1.19;
 }
+
 .network {
     margin-top: 16px;
     display: flex;
     justify-content: center;
 }
+
 .network .item-link:not(:first-child) {
     margin-left: 10px;
 }
@@ -293,21 +316,22 @@ img {
     color: #AFB1B8;
     text-decoration: none;
 }
+
 .social-links:hover,
 .social-links:focus {
     color: var(--accent-color);
 }
 
-.team {
-    background-color: var(--bg-color);
-}
+/* Постоянные клиенты */
 .clients {
     margin-top: 50px;
     display: flex;
 }
+
 .clients .item:not(:first-child) {
     margin-left: 30px;
 }
+
 /* Оформление футера */
 .footer {
     padding-top: 48px;
@@ -329,7 +353,7 @@ img {
 
 .footer-logo {
     color: var(--primary-white-color);
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 22px;
     line-height: 1.18;
@@ -357,6 +381,7 @@ img {
 .join {
     margin-right: 102px;
 }
+
 .call {
     color: var(--primary-white-color);
     font-weight: 700;
@@ -401,6 +426,7 @@ img {
     line-height: 1.17;
     text-align: center;
 }
+
 .filter {
     margin-bottom: 50px;
     display: flex;
@@ -426,18 +452,20 @@ img {
     line-height: 1.62;
     letter-spacing: 0.03em;
 }
+
 .filter-item:hover,
 .filter-item:focus {
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 }
+
 .projects {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
-
 }
+
 .projects .item {
     margin: 15px;
     width: 370px;
@@ -446,6 +474,7 @@ img {
     
     border-radius: 5px;
 }
+
 .card-content {
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
@@ -454,6 +483,7 @@ img {
     border-bottom-right-radius: 5px;
     padding: 20px 20px;
 }
+
 .name-project {
     margin-top: 0;
     margin-bottom: 4px;
@@ -464,9 +494,11 @@ img {
     line-height: 2;
     letter-spacing: 0.06em;
 }
+
 .project-link {
     text-decoration: none;
 }
+
 .project-item {
     margin-top: 0;
     margin-bottom: 0;
@@ -476,6 +508,7 @@ img {
     font-size: 16px;
     line-height: 1.87;
 }
+
 .project-text {
     display: none;
     margin-top: 0;
