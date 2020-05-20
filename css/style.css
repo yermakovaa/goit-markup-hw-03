@@ -111,7 +111,7 @@ img {
     color: var(--accent-color);
 }
 
-.header.line {
+.header-section.line {
     border-bottom: 1px solid #ECECEC;
 }
 
@@ -335,7 +335,7 @@ img {
 }
 
 /* Оформление футера */
-.footer {
+.footer-section {
     padding-top: 48px;
     padding-bottom: 21px;
 
